@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+            integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
+        <link rel="icon" href="img/avatar.jpg">
+        <link rel="stylesheet" href="css/main.min.css">
+        <link rel="stylesheet" href="css/media.min.css">
+
+        <title>MixereQ</title>
+    </head>
+
+    <body>
+
+        <nav id="navbar" class="navbar">
+            <span class="navbar-toggle" id="navbar-toggle">
+                <i class="fas fa-bars toggle-icon"></i>
+            </span>
+            <ul class="navbar-menu" id="navbar-menu">
+                <li>
+                    <a href="#home" id="homeBtn" class="navbar-links"><i class="fas fa-home"></i>Home</a>
+                </li>
+                <li>
+                    <a href="#about" id="aboutBtn" class="navbar-links"><i class="fas fa-id-badge"></i>O mnie</a>
+                </li>
+                <li>
+                    <a href="#projects" id="projectsBtn" class="navbar-links"><i
+                            class="fas fa-project-diagram"></i>Projekty</a>
+                </li>
+                <li>
+                    <a href="#technologies" id="techBtn" class="navbar-links"><i class="fas fa-cogs"></i>Technologie</a>
+                </li>
+                <li>
+                    <a href="#contact" id="contactBtn" class="navbar-links"><i class="fas fa-phone"></i>Kontakt</a>
+                </li>
+            </ul>
+        </nav>
+        <span id="home"></span>
+        <header class="header-welcome">
+            <h1>Witaj na <span>www.mixereq.pl</span></h1>
+            <a href="#about" id="header-link" class="header-link">
+                <i class="fas fa-angle-double-down"></i>
+            </a>
+        </header>
+        <main>
+            <article id="about" class="about">
+                <section class="about-title">
+                    Kilka słów o mnie
+                </section>
+                <section class="about-content">
+                    <span class="about-text">
+                        Nazywam się Mateusz Ral, mam 18 lat i&nbsp;aktualnie chodzę do trzeciej klasy technikum informatycznego.
+                        <p class="text-sep">Front-end interesuję mnie od około 2&nbsp;lat z&nbsp;małymi przerwami.
+                        Staram się pisać poprawny i&nbsp;czytelny kod i&nbsp;dbam o&nbsp;to żeby moje strony były responsywne.</p>
+                        Poza 'frontem' interesuję się także e-sportem oraz motoryzacją.
+                    </span>
+                    <a class="socialmedia github" target="_blank" href="https://github.com/mixereqv1"></a>
+                    <a class="socialmedia yt" target="_blank"
+                        href="https://www.youtube.com/channel/UCYWpP2y3PzBzI-QvOrPDNZQ"></a>
+                    <a class="socialmedia steam" target="_blank" href="https://steamcommunity.com/id/mixer3qv4/"></a>
+                    <a class="socialmedia spotify" target="_blank"
+                        href="https://open.spotify.com/user/hz8yqmud2mt0aqmc2jbuzbh2u"></a>
+                    <a class="socialmedia whatsapp" target="_blank" href="https://wa.me/48535241175"></a>
+                    <a class="socialmedia twitch" target="_blank" href="https://www.twitch.tv/mixer3q"></a>
+                </section>
+            </article>
+            <section class="separator first"></section>
+            <article id="projects" class="projects">
+                <section class="projects-title">
+                    Moje projekty
+                </section>
+                <section class="projects-content">
+                    <div class="projects-item">
+                        <a title="ToDo - app" class="todo preview" target="_blank"
+                            href="https://mixereqv1.github.io/ToDo-app/"></a>
+                    </div>
+                    <div class="projects-item">
+                        <a title="Rock paper scissors" class="rps" target="_blank"
+                            href="https://mixereqv1.github.io/Rock-paper-scissors/"></a>
+                    </div>
+                </section>
+            </article>
+            <section class="separator second"></section>
+            <article id="technologies" class="technologies">
+                <section class="technologies-title">
+                    Technologie
+                </section>
+                <section class="technologies-content">
+                    <section class="tech-use-learn-title">Korzystam z:</section>
+                    <div class="tech-use">
+                        <img title="HTML5" alt="HTML5" src="img/html5.png">
+                    </div>
+                    <div class="tech-use">
+                        <img title="JS" alt="JS" src="img/js.jpg">
+                    </div>
+                    <div class="tech-use">
+                        <img title="CSS3" alt="CSS3" src="img/css3.png">
+                    </div>
+                    <div class="tech-use">
+                        <img title="SASS" alt="SASS" src="img/sass.png">
+                    </div>
+                    <section class="tech-use-learn-title">Uczę się:</section>
+                    <div class="tech-learn">
+                        <img title="React" alt="REACT" src="img/react.png">
+                    </div>
+                    <div class="tech-learn">
+                        <img title="jQuery" alt="JQUERY" src="img/jquery.png">
+                    </div>
+                    <div class="tech-learn">
+                        <img title="Bootstrap" alt="BOOTSTRAP" src="img/bootstrap.png">
+                    </div>
+                </section>
+            </article>
+            <article id="contact" class="contact">
+                <section class="contact-title">
+                    <p>Kontakt</p>
+                    <span>Telefon: </span><br />(+48) 535 241 175<br />
+                    <span>E-mail: </span><br />contact@mixereq.pl
+                </section>
+                <form class="contact-form" method="POST" action="contact.php">
+                    <input class="form-item" type="text" name="firstname" pattern="[A-Za-ząćęłńóśżź]+"
+                        placeholder="Podaj imię..." required>
+                    <input class="form-item" type="email" name="email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
+                        placeholder="Podaj email..." required>
+                    <textarea id="message" class="form-message" name="message" rows="2"
+                        placeholder="Wpisz wiadomość..."></textarea>
+                    <button id="form-send-button" class="form-send-button">Wyślij</button>
+                </form>
+            </article>
+            <footer class="footer">
+                <span>Copyright &copy; Mateusz Ral 2019r.</span>
+            </footer>
+        </main>
+
+        <script src="main.js"></script>
+    </body>
+
+</html>
