@@ -258,19 +258,17 @@ main .projects .projects-title {
 
 main .projects .projects-content {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   margin-top: 150px;
 }
 
 main .projects .projects-content .projects-item {
-  width: 40%;
+  width: 35%;
 }
 
-main .projects .projects-content .projects-item .todo {
-  background: url("../img/todo.PNG") no-repeat center;
+main .projects .projects-content .projects-item .reg-login {
+  background: url("../img/reg-login.PNG") no-repeat center;
   background-size: cover;
-  border-radius: 15px;
+  border-radius: 15px 0 0 15px;
   width: 100%;
   height: 350px;
   display: flex;
@@ -280,14 +278,23 @@ main .projects .projects-content .projects-item .todo {
 main .projects .projects-content .projects-item .rps {
   background: url("../img/rps.PNG") no-repeat top;
   background-size: cover;
-  border-radius: 15px;
   width: 100%;
   height: 350px;
   display: flex;
   transition: all .3s ease;
 }
 
-main .projects .projects-content .projects-item .todo:hover, main .projects .projects-content .projects-item .rps:hover {
+main .projects .projects-content .projects-item .todo {
+  background: url("../img/todo.PNG") no-repeat center;
+  background-size: cover;
+  border-radius: 0 15px 15px 0;
+  width: 100%;
+  height: 350px;
+  display: flex;
+  transition: all .3s ease;
+}
+
+main .projects .projects-content .projects-item .reg-login:hover, main .projects .projects-content .projects-item .todo:hover, main .projects .projects-content .projects-item .rps:hover {
   box-shadow: 2px 3px 5px #000;
 }
 

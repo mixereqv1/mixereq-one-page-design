@@ -24,26 +24,25 @@
             </span>
             <ul class="navbar-menu" id="navbar-menu">
                 <li>
-                    <a href="#home" id="homeBtn" class="navbar-links"><i class="fas fa-home"></i>Home</a>
+                    <a href="#home" class="navbar-links"><i class="fas fa-home"></i>Home</a>
                 </li>
                 <li>
-                    <a href="#about" id="aboutBtn" class="navbar-links"><i class="fas fa-id-badge"></i>O mnie</a>
+                    <a href="#about" class="navbar-links"><i class="fas fa-id-badge"></i>O mnie</a>
                 </li>
                 <li>
-                    <a href="#projects" id="projectsBtn" class="navbar-links"><i
-                            class="fas fa-project-diagram"></i>Projekty</a>
+                    <a href="#projects" class="navbar-links"><i class="fas fa-project-diagram"></i>Projekty</a>
                 </li>
                 <li>
-                    <a href="#technologies" id="techBtn" class="navbar-links"><i class="fas fa-cogs"></i>Technologie</a>
+                    <a href="#technologies" class="navbar-links"><i class="fas fa-cogs"></i>Technologie</a>
                 </li>
                 <li>
-                    <a href="#contact" id="contactBtn" class="navbar-links"><i class="fas fa-phone"></i>Kontakt</a>
+                    <a href="#contact" class="navbar-links"><i class="fas fa-phone"></i>Kontakt</a>
                 </li>
             </ul>
         </nav>
         <span id="home"></span>
         <header class="header-welcome">
-            <h1>Witaj na <span>www.mixereq.pl</span></h1>
+            <h1>Witaj na <span>mixereq.pl</span></h1>
             <a href="#about" id="header-link" class="header-link">
                 <i class="fas fa-angle-double-down"></i>
             </a>
@@ -55,9 +54,11 @@
                 </section>
                 <section class="about-content">
                     <span class="about-text">
-                        Nazywam się Mateusz Ral, mam 18 lat i&nbsp;aktualnie chodzę do trzeciej klasy technikum informatycznego.
+                        Nazywam się Mateusz Ral, mam 18 lat i&nbsp;aktualnie chodzę do trzeciej klasy technikum
+                        informatycznego.
                         <p class="text-sep">Front-end interesuję mnie od około 2&nbsp;lat z&nbsp;małymi przerwami.
-                        Staram się pisać poprawny i&nbsp;czytelny kod i&nbsp;dbam o&nbsp;to żeby moje strony były responsywne.</p>
+                            Staram się pisać poprawny i&nbsp;czytelny kod i&nbsp;dbam o&nbsp;to żeby moje strony były
+                            responsywne.</p>
                         Poza 'frontem' interesuję się także e-sportem oraz motoryzacją.
                     </span>
                     <a class="socialmedia github" target="_blank" href="https://github.com/mixereqv1"></a>
@@ -77,12 +78,16 @@
                 </section>
                 <section class="projects-content">
                     <div class="projects-item">
-                        <a title="ToDo - app" class="todo preview" target="_blank"
-                            href="https://mixereqv1.github.io/ToDo-app/"></a>
+                        <a title="Register/login" class="reg-login preview" target="_blank"
+                            href="http://unshadowed-employee.000webhostapp.com/login.php"></a>
                     </div>
                     <div class="projects-item">
-                        <a title="Rock paper scissors" class="rps" target="_blank"
+                        <a title="Rock paper scissors" class="rps preview" target="_blank"
                             href="https://mixereqv1.github.io/Rock-paper-scissors/"></a>
+                    </div>
+                    <div class="projects-item">
+                        <a title="ToDo - app" class="todo preview" target="_blank"
+                            href="https://mixereqv1.github.io/ToDo-app/"></a>
                     </div>
                 </section>
             </article>
@@ -126,8 +131,9 @@
                 <form class="contact-form" method="POST" action="contact.php">
                     <input class="form-item" type="text" name="firstname" pattern="[A-Za-ząćęłńóśżź]+"
                         placeholder="Podaj imię..." required>
-                    <input class="form-item" type="email" name="email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$"
-                        placeholder="Podaj email..." required>
+                    <input class="form-item" type="email" name="email"
+                        pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" placeholder="Podaj email..."
+                        required>
                     <textarea id="message" class="form-message" name="message" rows="2"
                         placeholder="Wpisz wiadomość..."></textarea>
                     <button id="form-send-button" class="form-send-button">Wyślij</button>

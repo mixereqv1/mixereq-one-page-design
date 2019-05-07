@@ -62,13 +62,20 @@
   }
   .projects .projects-content {
     justify-content: center !important;
+    flex-wrap: wrap;
   }
   .projects .projects-content .projects-item {
     width: 370px !important;
     margin: 20px 0 20px 0;
   }
+  .projects .projects-content .projects-item .preview {
+    border-radius: 15px !important;
+  }
   .technologies {
     padding: 5% 7% !important;
+  }
+  .technologies .technologies-title {
+    font-size: 48px !important;
   }
   .technologies .tech-use, .technologies .tech-learn {
     width: 40% !important;
@@ -76,6 +83,7 @@
   .contact {
     padding: 5% 8% !important;
     flex-direction: column !important;
+    height: 700px !important;
   }
   .contact .contact-title {
     width: 100% !important;
@@ -85,5 +93,6 @@
   }
   .footer {
     padding: 0 30px !important;
+    height: 50px !important;
   }
 }
