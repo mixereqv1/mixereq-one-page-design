@@ -84,32 +84,10 @@
         color: #fff;
         text-shadow: 2px 2px 2px #000;
         transition: all .3s ease;
-        animation: bounce 1s infinite;
-        animation-delay: 1s;
     }
 
-    @keyframes bounce {
-        0%{bottom: 40px;}
-        25%{ bottom: 50px;}
-        50%{bottom: 55px;}
-        75%{bottom: 50px;}
-        100%{bottom: 35px;}
-    }
-
-    @-webkit-keyframes bounce {
-        0%{bottom: 40px;}
-        25%{ bottom: 50px;}
-        50%{bottom: 55px;}
-        75%{bottom: 50px;}
-        100%{bottom: 35px;}
-    }
-
-    @-moz-keyframes bounce {
-        0%{bottom: 40px;}
-        25%{ bottom: 50px;}
-        50%{bottom: 55px;}
-        75%{bottom: 50px;}
-        100%{bottom: 35px;}
+    .animated{
+        animation-iteration-count: infinite;
     }
 }
 
