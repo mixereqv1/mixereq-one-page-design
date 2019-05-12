@@ -52,3 +52,13 @@ for(let i = 0; i < navbar_links.length; i++){
     toggle_icon.className = 'fas fa-bars toggle-icon';
   })
 }
+
+//link gain active class after click
+let active_link = document.getElementById('menu-home');
+
+navbar_main.addEventListener('click',function(event){
+  active_link.classList.remove('active-link');
+  active_link = event.target;
+  console.log(active_link);
+  active_link.classList.add('active-link');
+})

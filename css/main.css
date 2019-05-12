@@ -44,6 +44,10 @@
   opacity: 1;
 }
 
+.navbar .navbar-menu .active-link {
+  opacity: 1;
+}
+
 .sticky {
   position: fixed;
   top: 0;
