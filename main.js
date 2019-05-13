@@ -55,10 +55,21 @@ for(let i = 0; i < navbar_links.length; i++){
 
 //link gain active class after click
 let active_link = document.getElementById('menu-home');
-
-navbar_main.addEventListener('click',function(event){
+let header_link = document.getElementById('header-link');
+let menu_about = document.getElementById('menu-about');
+header_link.addEventListener('click',function(){
   active_link.classList.remove('active-link');
-  active_link = event.target;
-  console.log(active_link);
-  active_link.classList.add('active-link');
+  menu_about.classList.add('active-link');
+})
+document.addEventListener('click',function(event){
+  if(event.target.id == 'header-link'){
+    active_link.classList.remove('active-link');
+    menu_about.classList.add('active-link');
+    active_link = menu_about;
+  }
+  else{
+    active_link.classList.remove('active-link');
+    active_link = event.target;
+    active_link.classList.add('active-link');
+  } 
 })
