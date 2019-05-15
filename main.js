@@ -36,7 +36,7 @@ let navbar_toggle = document.getElementById('navbar-toggle');
 let toggle_icon = document.querySelector('.toggle-icon');
 navbar_toggle.addEventListener('click',function(){
   navbar_main.classList.toggle('collapse');
-  if(toggle_icon.className == 'fas fa-bars toggle-icon'){
+  if(toggle_icon.className == 'fas fa-bars toggle-icon' || toggle_icon.className == 'fas fa-bars toggle-icon active-link'){
     toggle_icon.className = 'fas fa-times toggle-icon clicked';
   }
   else{
